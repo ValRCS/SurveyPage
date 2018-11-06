@@ -1,0 +1,119 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Aptauja</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="survey.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+    crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Aptaujas veidlapa</h1>
+        <div id="form-outer">
+          <p id="description">
+          Palīdzat attīstīt šo vietni aizpildot anketu.
+          </p>
+          <form id="survey-form">
+            <div class="rowTab">
+              <div class="labels">
+                <label id="name-label" for="name">* Vārds: </label>
+              </div>
+              <div class="rightTab">
+                <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Ierakstiet savu vārdu" required>
+              </div>
+            </div>
+            <div class="rowTab">
+              <div class="labels">
+                <label id="email-label" for="email">* E-pasts: </label>
+              </div>
+              <div class="rightTab">
+                <input type="email" name="email" id="email" class="input-field" required placeholder="Ierakstiet savu e-pastu">
+              </div>
+            </div>
+            <div class="rowTab">
+              <div class="labels">
+                <label id="number-label" for="age">* Vecums: </label>
+              </div>
+              <div class="rightTab">
+                <input type="number" name="age" id="number" min="14" max="125" class="input-field" placeholder="Vecums">
+              </div>
+            </div>
+            <div class="rowTab">
+              <div class="labels">
+                <label for="currentPos">Statuss</label>
+              </div>
+              <div class="rightTab">
+                <select id="dropdown" name="currentPos" class="dropdown">
+              <option disabled value>Opciju izvēle</option>
+              <option  value="student">Students</option>
+              <option value="job">Strādājošais</option>
+              <option value="learner">Bezdarbnieks</option>
+              <option value="preferNo">Pašnodarbinātais</option>
+              <option value="other">Juridiska persona</option>
+            </select>
+              </div>
+            </div>
+            <div class="rowTab">
+              <div class="labels">
+                <label for="userRating">* Vai Jūs ieteiksiet citiem šo vietni?</label>
+              </div>
+              <div class="rightTab">
+                <ul style="list-style: none;">
+                  <li class="radio"><label>Noteikti<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+                  <li class="radio"><label>Varbūt<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+                  <li class="radio"><label>Nekādā gadījumā<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+                </ul>
+              </div>
+            </div>
+            <div class="rowTab">
+              <div class="labels">
+                <label for="most-like">Kas Jums patīk šajā vietnē: </label>
+              </div>
+              <div class="rightTab">
+                <select id="most-like" name="mostLike" class="dropdown">
+              <option disabled selected value>Opciju izvēlne</option>
+              <option value="challenges">Mūzika</option>
+              <option value="projects">Raksti</option>
+              <option value="community">Forums</option>
+              <option value="openSource">Atbalsts</option>
+            </select>
+              </div>
+            </div>
+            <div class="rowTab">
+              <div class="labels">
+                <label for="preferences">Lietas, kas attīstītu šo vietni<br>(Atzīmējat lauciņus, kas Jums liekas piemēroti): </label>
+              </div>
+              <div class="rightTab">
+                <ul id="preferences" style="list-style: none;">
+                  <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Konkursi</label></li>
+                  <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Mācības</li>
+                  <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Izklaide</label></li>
+                  <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Organizēšana</label></li>
+                  <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Biļetes</label></li>
+                  <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Čata Atbalsts</label></li>
+                  <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">Video</label></li>
+                  <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userRatings">"Meetups"</label></li>
+                  <li class="checkbox"><label><input name="prefer" value="9" type="checkbox" class="userRatings">Informācija</label></li>
+                  <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Forumi</label></li>
+                  <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Kursi</label></li>
+                </ul>
+              </div>
+            </div>
+            <div class="rowTab">
+              <div class="labels">
+                <label for="comments">Kādi papildus ieteikumi?</label>
+              </div>
+              <div class="rightTab">
+                <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Komentāri..."></textarea>
+              </div>
+            </div>
+            <button id="submit" type="submit">Apstiprināt</button>
+          </form>
+        </div>
+    </div>
+</body>
+</html>
